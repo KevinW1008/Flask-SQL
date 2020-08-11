@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+
+
+
+
+
+{% block content %}
+
+<!--Displayting table-->
+<head>
+    <title>Database</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/table.css" />
+</head>
+<h1 style="text-align: center">{{ title }}</h1>
+
+<table class="content-table">
+    <thead>
+        <tr>
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Home Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+            <th>Email</th>
+            <th>Cell</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for person in customer %}
+        <tr>
+            <td>{{person.custID}}</td>
+            <td>{{person.custName}}</td>
+            <td>{{person.homeAdd}}</td>
+            <td>{{person.city}}</td>
+            <td>{{person.stateName}}</td>
+            <td>{{person.zipCode}}</td>
+            <td>{{person.email}}</td>
+            <td>{{person.cell}}</td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+
+
+
+<!--Form-->
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/form.css" />
+</head>
+
+<div class="form">
+    <!--Form Control: Based on options, choose what action you wish to perform on the database-->
+    <script>
+        function myFunction() {
+            let box_value = document.getElementById("selection").value;
+            if (box_value == "add_form") {
+                document.getElementById("add_form").style.display = "initial"
+                document.getElementById("delete_form").style.display = "none"
+            } else if (box_value == "delete_form") {
+                document.getElementById("add_form").style.display = "none"
+                document.getElementById("delete_form").style.display = "initial"
+            } else if (box_value == "update_form") {
+                document.getElementById("add_form").style.display = "none"
+                document.getElementById("delete_form").style.display = "none"
+                document.getElementById("update_form").style.display = "initial"
+            }
+        }
+    </script>
+
+    <!--Selection list-->
+    <select id="selection" onchange="myFunction()">
+        <option value="" selected="selected">Choose your options</option>
+        <option value="add_form">Add Customer</option>
+        <option value="delete_form">Delete Customer</option>
+        <option value="update_form">Update Customer</option>
+    </select>
+
+    <!--Form to add customer information-->
+    <form class="table" name="add_form" id="add_form" style="display:none" action="/table" method='POST'>
+        <fieldset>
+            <legend>Input Customer Information</legend>
+            <input type="text" name="name" placeholder="Customer Name">
+            <input type="text" name="homeAdd" placeholder="Home Address">
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="state" placeholder="State">
+            <input type="text" name="zipCode" placeholder="ZipCode">
+            <input type="text" name="email" placeholder="Valid Email">
+            <input type="text" name="cell" placeholder="Cell">
+        </fieldset>
+        <input type="submit" name="addition" value="Submit" />
+    </form>
+
+
+    <!--Form to delete customer information-->
+    <form class="table" name="delete_form" id="delete_form" value="delete_form" style="display:none" action="/table" method='POST'>
+        <fieldset>
+            <legend>Deleting Customer Records</legend>
+            <input type="text" name="ID" placeholder="Customer ID">
+        </fieldset>
+        <input type="submit" name="deletion" value="Confirm Deletion" />
+    </form>
+
+
+    <!--Form to update customer information-->
+    <form class="table" name="update_form" id="update_form" style="display:none" action="/table" method='POST'>
+        <fieldset>
+            <legend>Update Customer Information</legend>
+            <p style="color: #DC143C">Customer ID must be filled. Other fields left blank will retain previous customer's data for those fields</p>
+            <input type="text" name="ID" placeholder="Customer ID">
+            <input type="text" name="name" placeholder="New Customer Name">
+            <input type="text" name="homeAdd" placeholder="New Home Address">
+            <input type="text" name="city" placeholder="New City">
+            <input type="text" name="state" placeholder="New State">
+            <input type="text" name="zipCode" placeholder="New Zip Code">
+            <input type="text" name="email" placeholder="New Valid Email">
+            <input type="text" name="cell" placeholder="New Cell">
+        </fieldset>
+        <input type="submit" name="update" value="Update" />
+    </form>
+
+
+</div>
+{% endblock %}
