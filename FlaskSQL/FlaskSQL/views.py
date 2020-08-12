@@ -9,7 +9,11 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.automap import automap_base
 import pyodbc
 
-app.config['SQLALCHEMY_DATABASE_URI']="mssql://LENOVO-Y900\SQLEXPRESS/TestDB?driver=SQL+Server?trusted_connection=yes"
+
+#This configs the URL source of your SQL server. I used SQLExpress/MSSQL. Other types of SQL databases are acceptable. 
+#To find your compatible URL check out this link in the Connection URI Format section:
+#https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
+app.config['SQLALCHEMY_DATABASE_URI']= "" #Put your URL in the quotes to the left
 db = SQLAlchemy(app)
 
 #Generates a quick and rudimentary object model from an existing database on the fly.
