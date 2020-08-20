@@ -9,16 +9,7 @@ Kevin Wang: kwang10082000@gmail.com
 4. Design User-Friendy Interface with HTML, CSS
 
 # Showcase of Product
-1. This is the main landing page. Links are 
 
-
-2. This is the second figure. Links in the footer are active. They can take you to our LinkedIn pages, our Github project repo and personal repos, as well as useful links if one wishes to dive deeper in the world of finance and stocks: 
-![2](https://github.com/KevinW1008/Stocks/blob/master/Repo_images/2.PNG?raw=true)
-
-3. One can search a new company by inputing a valid Stock Ticker. Here we will be searching up Apple Inc. The page will update the figures. Invalid stock tickers will maintain the previous figures, allowing you to reinput.
-![2](https://github.com/KevinW1008/Stocks/blob/master/Repo_images/3.PNG?raw=true)
-![2](https://github.com/KevinW1008/Stocks/blob/master/Repo_images/4.PNG?raw=true)
-![2](https://github.com/KevinW1008/Stocks/blob/master/Repo_images/5.PNG?raw=true)
 
 
 
@@ -27,11 +18,14 @@ Kevin Wang: kwang10082000@gmail.com
 * HTML/CSS
 * Flask
 
-# How to Run the Project
+# Prerequiste Steps (Very Important)
 1. Download SQL Express: https://www.microsoft.com/en-us/sql-server/sql-server-downloads
 2. Download SQL Management Studio: https://www.google.com/search?rlz=1C1CHBF_enUS857US857&sxsrf=ALeKk00i4a1GM8qjyRA8IlamzRXdAMEFuw%3A1597936066781&ei=wpE-X7OtL-bF_QbKxqroDw&q=sql+management+studio&oq=sql+ma&gs_lcp=CgZwc3ktYWIQARgAMgcIABCxAxBDMgQIABBDMgQIABBDMgQIABBDMgIIADIFCAAQsQMyAggAMgIIADICCAAyAggAOgQIABBHOggIABCxAxCDAVD5C1jjDWClEWgAcAJ4AIABTIgBkwGSAQEymAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab
 3. Download Visual Studio: https://visualstudio.microsoft.com/
    Make sure you download Python packages shown on the installer
+4. Create your own SQL server. Plenty of youtube tutorials.
+!! 5. In `\Flask-SQL\FlaskSQL\FlaskSQL\views.py`, line 16, you must add your respective SQL Server URL. The website on how to do that is in the comments above that line
+
 
 Once prerequisite software is downloaded, open the solution file (\Flask-SQL\FlaskSQL\FlaskSQL.sln) with VS. Click Run Web Server and it will be on your local host. 
 
