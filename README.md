@@ -35,6 +35,7 @@ Kevin Wang: kwang10082000@gmail.com
 * Python (SQL ALchemy)
 * HTML/CSS
 * Flask
+* Javascript
 
 # Prerequiste Steps (Very Important)
 1. Download SQL Express: https://www.microsoft.com/en-us/sql-server/sql-server-downloads
