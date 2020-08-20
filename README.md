@@ -8,8 +8,26 @@ Kevin Wang: kwang10082000@gmail.com
 3. Apply functions to manipulate SQL Databases (ie. add user, delete user, update user, etc.)
 4. Design User-Friendy Interface with HTML, CSS
 
-# Showcase of Product
+# Future Objectives
+- Add Second Database
+- Connect Two Databases (ie. Customer and Orders Tables)
+- Adding sorting function to table based on column
 
+# Showcase of Product
+1. The Main Landing Page:
+![1](https://github.com/KevinW1008/Flask-SQL/blob/master/FlaskSQL/Repo_Pictures/1.PNG)
+2. Database connected with local SQL Database
+![1](https://github.com/KevinW1008/Flask-SQL/blob/master/FlaskSQL/Repo_Pictures/2.PNG)
+3. Adding user and updates database promptly
+![1](https://github.com/KevinW1008/Flask-SQL/blob/master/FlaskSQL/Repo_Pictures/3.PNG)
+![1](https://github.com/KevinW1008/Flask-SQL/blob/master/FlaskSQL/Repo_Pictures/4.PNG)
+4. SQL Management Studio - Changes are in real time
+![1](https://github.com/KevinW1008/Flask-SQL/blob/master/FlaskSQL/Repo_Pictures/6.PNG)
+5. Deleting user 
+![1](https://github.com/KevinW1008/Flask-SQL/blob/master/FlaskSQL/Repo_Pictures/5.PNG)
+6. Updating user information
+![1](https://github.com/KevinW1008/Flask-SQL/blob/master/FlaskSQL/Repo_Pictures/7.PNG)
+![1](https://github.com/KevinW1008/Flask-SQL/blob/master/FlaskSQL/Repo_Pictures/8.PNG)
 
 
 
