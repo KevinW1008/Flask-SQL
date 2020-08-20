@@ -33,6 +33,6 @@ Kevin Wang: kwang10082000@gmail.com
 3. Download Visual Studio: https://visualstudio.microsoft.com/
    Make sure you download Python packages shown on the installer
 
-Once prerequisite software is downloaded, open the solution file with VS. Click Run Web Server and it will be on your local host. 
+Once prerequisite software is downloaded, open the solution file (\Flask-SQL\FlaskSQL\FlaskSQL.sln) with VS. Click Run Web Server and it will be on your local host. 
 
 
