@@ -24,7 +24,7 @@ Kevin Wang: kwang10082000@gmail.com
 3. Download Visual Studio: https://visualstudio.microsoft.com/
    Make sure you download Python packages shown on the installer
 4. Create your own SQL server. Plenty of youtube tutorials.
-!! 5. In `\Flask-SQL\FlaskSQL\FlaskSQL\views.py`, line 16, you must add your respective SQL Server URL. The website on how to do that is in the comments above that line
+5. In `\Flask-SQL\FlaskSQL\FlaskSQL\views.py`, line 16, you must add your respective SQL Server URL. The website on how to do that is in the comments above that line
 
 
 Once prerequisite software is downloaded, open the solution file (\Flask-SQL\FlaskSQL\FlaskSQL.sln) with VS. Click Run Web Server and it will be on your local host. 
